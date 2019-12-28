@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Budget App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="logo.png" type="png">
+</head>
+
+<body>
+    <header>
+        <div id="heading">
+            <div id="budget">Budget</div>
+            <div id="total">₹<span id="tot">0</span></div><br>
+            <div id="income">Income:&nbsp&nbsp&nbsp₹<span id="pl">0</span></div><br>
+            <div id="spend">Spend:&nbsp&nbsp&nbsp₹<span id="mi">0</span></div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-1"><input type="text" class="form-control" id="plus-minus" list="p-m" placeholder="+ -">
+            <datalist id="p-m">
+                    <option value="+">
+                    <option value="-">
+                  </datalist>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="txt" placeholder="Add Description">
+        </div>
+        <div class="col-sm-1">
+            <input type="number" class="form-control" id="val" placeholder="Money">
+        </div>
+        <div class="col-sm-1"><button type="button" class="btn btn-default button">
+                <span class="glyphicon glyphicon-pencil"></span> Write
+              </button></div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-4">
+            <table class="table table-hover" id="content-0">
+                <tr id="main-0">
+                    <th>Income</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-4">
+            <table class="table  table-hover" id="content-1">
+                <tr id="main-1">
+                    <th>Spend</th>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
